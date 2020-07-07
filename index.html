@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Textarea</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class='expand' id='expandWrapper'>
+            <h1 class="heading">Zen Textarea</h1>
+            <div class="expand_wrapper">
+                <div class='expand_head'>
+                    <span class='heading_expand'>What's in your mind?</span>
+                    <button class='btn_expand' id='expand'>
+                        <img src="./icons/expand_icon.svg" alt="Expand button">
+                        <span>Expand</span>
+                    </button>
+                </div>
+                <textarea name="comment" id="comment" class='comment' placeholder="Leave a comment"rows="6" cols="30"></textarea>
+                <button class='btn_submit'>Submit comment</button>
+            </div>
+        </div>
+        <div class="shrink hidden" id='shrinkWrapper'>
+            <button class='btn_shrink' id='shrink'>
+                <img src="./icons/shrink_icon.svg" alt="Shrink button">
+                <span>Shrink</span>
+            </button>
+            <div class="shrink_text" id='shrinkText'></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
